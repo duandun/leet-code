@@ -12,6 +12,7 @@ function Container() {
         const loadCmp = async(name: string) => {
             const data = await import(`../questions/${name}`);
             setCmp(() => data.default);
+
         }
         if (cmpName) {
             loadCmp(cmpName);
