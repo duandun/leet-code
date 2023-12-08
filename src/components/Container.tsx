@@ -5,6 +5,10 @@ import type { RadioChangeEvent } from 'antd';
 import './Container.css';
 import QuestionList from '../questions/QuestionList';
 
+/**
+ * 容器组件
+ * @constructor
+ */
 function Container() {
     const [Cmp, setCmp] = useState<React.FC>();
     const [cmpName, setCmpName] = useState('');
