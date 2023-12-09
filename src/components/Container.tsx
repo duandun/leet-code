@@ -19,7 +19,6 @@ function Container() {
         }
         if (cmpName) {
             loadCmp(cmpName);
-            loadCmp(cmpName);
         }
     }
     const handleRadioChange = (e: RadioChangeEvent) => {
