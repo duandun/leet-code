@@ -36,7 +36,9 @@ function Container() {
                 </Radio.Group>
             </div>
             <Button type="primary" size="large" onClick={handleClickFire} >运行</Button>
-            { Cmp && <Cmp /> }
+            <div>
+                {Cmp && <Cmp/>}
+            </div>
         </div>
     )
 }
