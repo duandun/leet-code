@@ -29,6 +29,20 @@ function transFunc(arr) {
     return arr;
 }
 
+function moveZero(arr) {
+    let p1 = arr.length - 1;
+    for (let i = arr.length - 1; i >= 0; i--) {
+        if (arr[i] !== 0) {
+            arr[p1] = arr[i];
+            p1--;
+        }
+    }
+    for (let i = p1; i >= 0; i--) {
+        arr[i] = 0;
+    }
+    return arr;
+}
+
 // 77 组合
 /*
     输入：n = 4, k = 2
@@ -91,7 +105,7 @@ function permute(nums = []) {
 
 const Add = () => {
     return (
-        <div>啦啦啦啦 rs = {JSON.stringify(permute([1, 2, 3]))}</div>
+        <div>啦啦啦啦 rs = {JSON.stringify(moveZero(testArr))}</div>
     )
 }
 
